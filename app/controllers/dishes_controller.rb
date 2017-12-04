@@ -14,8 +14,6 @@ class DishesController < ApplicationController
   end
 
   def new
-    @dish = Dish.new
-
     render("dishes/new.html.erb")
   end
 
