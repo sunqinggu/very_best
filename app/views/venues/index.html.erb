@@ -3,6 +3,9 @@
     Venues
     <a href="/venues/new" class="btn btn-lg btn-success">New Venue</a>
   </h1>
+  
+
+  
 </div><div class="row mb-1">
   <div class="col-md-12">
     <%= search_form_for @q, :class => "collapse", :id => "venues_filters" do |f| %>
@@ -12,7 +15,6 @@
     <%= f.label :name_cont, "Name contains" %>
     <%= f.text_field :name_cont, :class => "form-control", :placeholder => "Name contains" %>
   </div>
-
 <div class="form-group">
           <%= f.label :created_at, "Created at" %>
           <div class="row">
@@ -69,10 +71,10 @@
     </div>
 
 <div class="form-group">
-      <%= f.label :specialties_name_cont, "Dish name contains" %>
-      <%= f.text_field :specialties_name_cont, :class => "form-control", :placeholder => "Dish name contains" %>
+      <%= f.label :specialties_name_cont, "Bookmarked dish name contains" %>
+      <%= f.text_field :specialties_name_cont, :class => "form-control", :placeholder => "Bookmarked dish name contains" %>
     </div>
-
+    
       <%= f.submit :class => "btn btn-primary btn-block mb-1" %>
 
       <a href="/venues" class="btn btn-default btn-block mb-1">Clear filters</a>
